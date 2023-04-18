@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>【Database】未分类的数据库原理</title>
+      <link href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
+      <url>/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="未分类的数据库原理">未分类的数据库原理</h1><h2 id="数据依赖的公理系统">数据依赖的公理系统</h2><p>In relation <span class="math inline">\(R&lt;U,F&gt;\)</span>, $U={A,B,C,D,E,G } $</p><p><span class="math inline">\(F=\left \{ BG\to C,BD\to E,DG\to C,ADG\toBC,AG\to B,B\to D \right \}\)</span></p><ol type="1"><li>Please find <span class="math inline">\(F_{min}\)</span></li><li>Please find Candidate Key for R</li><li>Format the <span class="math inline">\(R&lt;U,F&gt;\)</span> into3NF (give derivation process)</li></ol><img src="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/image-20230418173647471.png" class="" title="image-20230418173647471"><img src="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/image-20230418173704320.png" class="" title="image-20230418173704320">]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Database </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Base】求职简历以及面试教程</title>
       <link href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/"/>
       <url>/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/</url>
