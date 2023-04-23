@@ -54,7 +54,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-04-23 08:29:01'
+  postUpdate: '2023-04-23 08:33:38'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -158,33 +158,151 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/background.css"><!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/ip.ico" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/background.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Keike1"><span class="site-name">Keike1</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Keike1</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理"><img class="post-bg" src="/img/page/page5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Database】未分类的数据库原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理">【Database】未分类的数据库原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-18T09:30:47.000Z" title="发表于 2023-04-18 17:30:47">2023-04-18</time></span></div><div class="content">未分类的数据库原理数据依赖的公理系统In relation $R$, $U=\left \{ A,B,C,D,E,G \right \} $
-$F=\left \{  BG\to C,BD\to E,DG\to C,ADG\to BC,AG\to B,B\to D \right \}$
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
 
-Please find $F_{min}$
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/ip.ico" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/background.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Keike1"><span class="site-name">Keike1</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Keike1</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理"><img class="post-bg" src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Database】未分类的数据库原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理">【Database】未分类的数据库原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-18T09:30:47.000Z" title="发表于 2023-04-18 17:30:47">2023-04-18</time></span></div><div class="content">未分类的数据库原理
+数据依赖的公理系统
+In relation , 
+
+
+Please find 
 Please find Candidate Key for R
-Format the $R$ into 3NF (give derivation process)
+Format the  into
+3NF (give derivation process)
 
 
 
 </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/" title="【Base】求职简历以及面试教程"><img class="post-bg" src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Base】求职简历以及面试教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/" title="【Base】求职简历以及面试教程">【Base】求职简历以及面试教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-15T10:11:05.000Z" title="发表于 2023-04-15 18:11:05">2023-04-15</time></span></div><div class="content">
-  dd3ed03bd336fd6815aa6e965af0fe4bd89f6637e8f100e386f033928faa690f006d3f7632822352e561141309626995810fb023a4133fa15441a8b922e9fce75323f00365e7f5738df22f2b776d520f57574680dc48a4b2b6174cbcda01ba9cf17c57b26259a77f908483a15c70821664607104c993b69d74ef2c2f938059b9057c944bd95a277b71ac93572d1141de2f49dc613686b14becf10cd3b2f216bc74c80ba0abf7f74382f64183778f0ae1ccaa5539c8982a86b0894b2c6115f1c66edc24ed43537562fe9910a211bd4644ba2895aec37d68e0db3d5d95f7c458209adc60a4110bc60409b2a57e6bf3551d73dd3207d70d0579c ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言"><img class="post-bg" src="/img/page/page5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Assembly】未分类的汇编语言"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言">【Assembly】未分类的汇编语言</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-05T14:48:15.000Z" title="发表于 2023-04-05 22:48:15">2023-04-05</time></span></div><div class="content">编译方法编译与连接
+  dd3ed03bd336fd6815aa6e965af0fe4bd89f6637e8f100e386f033928faa690f006d3f7632822352e561141309626995810fb023a4133fa15441a8b922e9fce74b0ee4e94555ed705009ed3f3797a1716c9a99efb170c31e24d89fc73d15b12942eebb699ad21801cfc5a235c61e2326d44cc22cad52c6189b7f444be30dbc5e1ac2b0f33f339bebec64f4177a09d3dab23b9cad2f367195452160761f0c0185e6ea04fe4e904e6cb8e9b73ae6ec30c9ceb5da33c420e792df06e7c9dce2b16334ed14e424fb5b094c174afefb32bc44ae66d9fad06fc44dbe956154bfaa9604765932538e3ded2be9be5af482ad706ddd4b6f71175f55e8b ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言"><img class="post-bg" src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Assembly】未分类的汇编语言"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言">【Assembly】未分类的汇编语言</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-05T14:48:15.000Z" title="发表于 2023-04-05 22:48:15">2023-04-05</time></span></div><div class="content">编译方法
+编译与连接
 12masm test.asmlink test.obj
 生成可执行文件后执行
 1test.exe
-伪指令定义伪指令用来指出程序分段、数据定义、存储分配、程序开始和结束等相关信息。
-段定义伪指令segment和ends成对使用
+伪指令定义
+伪指令用来指出程序分段、数据定义、存储分配、程序开始和结束等相关信息。
+段定义伪指令
+segment和ends成对使用
 123456789101112data segment...data endsextra segment...extra endsstack segment...stack endscode segment...code ends
 使用assume伪指令知名段寄存器与段的对应关系
 1assume cs:code,ds:data,es:extra,ss:stack
-数据定义伪指令12345db 定义字节单元（byte）dw 定义字单元（word）dd 定义双字单元（double word）dq 定义四字单元dt 定义十字节单元
+数据定义伪指令
+12345db 定义字节单元（byte）dw 定义字单元（word）dd 定义双字单元（double word）dq 定义四字单元dt 定义十字节单元
 举例
 12345data segment	x db 56	e_1 dw 2030H	carry dd 12345678Hdata ends
 可以使用dup循环指令定义存储空间
-1n dup(m) ;表示n个m
-其他伪指令 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API"><img class="post-bg" src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】Chainlink Any API"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API">【Chainlink】Chainlink Any API</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T14:19:23.000Z" title="发表于 2023-04-01 22:19:23">2023-04-01</time></span></div><div class="content">前言在Chainlink官方文档中，Any API提及了获取多元链下数据的方式，包括uint256，int256，bool，string，bytes32和bytes六种类型。本文将对单元请求、多元请求、数组请求、大型请求的对应操作进行模拟。
+1 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API"><img class="post-bg" src="/img/page/page5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】Chainlink Any API"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API">【Chainlink】Chainlink Any API</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-01T14:19:23.000Z" title="发表于 2023-04-01 22:19:23">2023-04-01</time></span></div><div class="content">前言
+在Chainlink官方文档中，Any
+API提及了获取多元链下数据的方式，包括uint256，int256，bool，string，bytes32和bytes六种类型。本文将对单元请求、多元请求、数组请求、大型请求的对应操作进行模拟。
 官方文档的写法：
 
 Single Word Response
@@ -194,14 +312,20 @@ Large Response
 
 翻译可能不准确，那不管了
 不仅如此，Chainlink节点的Job充当了一个辅助预言机节点监听智能合约时间的角色。当用户调用智能合约的请求函数时，请求函数体中会emit一个event事件，从而使预言机节点能够监听到这个event并根据Job的规定作出相应的回应。
-部署合约关键在于指定JobId、LinkToken Address、Operator Address和API，但Chainlink官网文档的合约并没有明确指明这四个字段的内容，因此我对他们进行了一些修改，以方便以后修改数据。
-代码可以参考Make a GET Request | Chainlink Documentat ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推"><img class="post-bg" src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【算法】递归与递推"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推">【算法】递归与递推</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-23T09:19:52.000Z" title="发表于 2023-03-23 17:19:52">2023-03-23</time></span></div><div class="content">递推与递归递归实现指数型枚举原题链接：92. 递归实现指数型枚举 - AcWing题库
-123456789101112131415161718192021222324252627282930313233#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 16;int n;int st[N];void dfs(int u) &#123;    if (u &gt; n) &#123;        for (int i = 1; i &lt;= n; ++i) &#123;            if (st[i] == 1) &#123;                printf(&quot;%d &quot;, i);            &#125;        &#125;        puts(&quot;&quot;);        return;    &#125;    st[u] = 2;    dfs(u + 1);    st[u] = 0;    st[u] = 1;    df ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E4%BA%8C%E5%88%86%E4%B8%8E%E5%89%8D%E7%BC%80%E5%92%8C/" title="【算法】二分与前缀和"><img class="post-bg" src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【算法】二分与前缀和"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E4%BA%8C%E5%88%86%E4%B8%8E%E5%89%8D%E7%BC%80%E5%92%8C/" title="【算法】二分与前缀和">【算法】二分与前缀和</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-23T09:14:27.000Z" title="发表于 2023-03-23 17:14:27">2023-03-23</time></span></div><div class="content">整数二分
+部署合约关键在于指定JobId、LinkToken Address、Operator
+Address和API，但Chainlink官网文档的合约并没有明确指明这四个字段的内容，因此我对他们进行了一些修改，以方便以后修改数据。
+代码可以参考Make a
+GET Request | Chai ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推"><img class="post-bg" src="/img/page/page7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【算法】递归与递推"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推">【算法】递归与递推</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-23T09:19:52.000Z" title="发表于 2023-03-23 17:19:52">2023-03-23</time></span></div><div class="content">递推与递归
+递归实现指数型枚举
+原题链接：92.
+递归实现指数型枚举 - AcWing题库
+123456789101112131415161718192021222324252627282930313233#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 16;int n;int st[N];void dfs(int u) &#123;    if (u &gt; n) &#123;        for (int i = 1; i &lt;= n; ++i) &#123;            if (st[i] == 1) &#123;                printf(&quot;%d &quot;, i);            &#125;        &#125;        puts(&quot;&quot;);        return;    &#125;    st[u] = 2;    dfs(u + 1);    st[u] = 0;    st[u] = 1; ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E4%BA%8C%E5%88%86%E4%B8%8E%E5%89%8D%E7%BC%80%E5%92%8C/" title="【算法】二分与前缀和"><img class="post-bg" src="/img/page/page7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【算法】二分与前缀和"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E4%BA%8C%E5%88%86%E4%B8%8E%E5%89%8D%E7%BC%80%E5%92%8C/" title="【算法】二分与前缀和">【算法】二分与前缀和</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-23T09:14:27.000Z" title="发表于 2023-03-23 17:14:27">2023-03-23</time></span></div><div class="content">整数二分
+
 确定一个区间，使得我们找的目标值一定在这个区间里
 找一个性质，满足：
+
 性质具有二段性（前半段满足，后半段不满足）
 答案是二段性的分界点
-
 
 
 答案有两种：一种是前半段的右端点，一种是后半段的左端点
@@ -218,16 +342,21 @@ else 说明ans必然在(L, M - 1)
 将(L, R)分成(L, M)和(M + 1, R)
 if M是绿色的，说明ans必然实在M的左边（L, M）
 else 说明ans必然在(M + 1, R)
-12345while (L &lt; R) &#123;	int M = (L + R) / 2; // 这里没有加1	if M绿 R = M;	else L = M + ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/22/%E3%80%90Chainlink%E3%80%91%E4%BD%BF%E7%94%A8Chainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8E%B7%E5%8F%96%E9%93%BE%E4%B8%8B%E6%95%B0%E6%8D%AE/" title="【Chainlink】使用Chainlink预言机获取链下数据"><img class="post-bg" src="/img/page/page3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】使用Chainlink预言机获取链下数据"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/22/%E3%80%90Chainlink%E3%80%91%E4%BD%BF%E7%94%A8Chainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8E%B7%E5%8F%96%E9%93%BE%E4%B8%8B%E6%95%B0%E6%8D%AE/" title="【Chainlink】使用Chainlink预言机获取链下数据">【Chainlink】使用Chainlink预言机获取链下数据</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-22T08:39:47.000Z" title="发表于 2023-03-22 16:39:47">2023-03-22</time></span></div><div class="content">前言在上一篇博客的基础上，本文将详细介绍Chainlink获取链下数据的方法。
-本文需要在Remix上部署三个智能合约，分别是LinkToken.sol、Operator.sol和ATestnetConsumer.sol。而LinkToken合约的部署流程已在上文详细给出，这里我写一下跳转链接：【Chainlink】基于私链运行一个Chainlink预言机节点 | Keike1 (keikei99.github.io)。
+12345while (L &lt; R) &#123;	int M = (L + R) / 2; // 这里没有加1	i ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/22/%E3%80%90Chainlink%E3%80%91%E4%BD%BF%E7%94%A8Chainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8E%B7%E5%8F%96%E9%93%BE%E4%B8%8B%E6%95%B0%E6%8D%AE/" title="【Chainlink】使用Chainlink预言机获取链下数据"><img class="post-bg" src="/img/page/page6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】使用Chainlink预言机获取链下数据"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/22/%E3%80%90Chainlink%E3%80%91%E4%BD%BF%E7%94%A8Chainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8E%B7%E5%8F%96%E9%93%BE%E4%B8%8B%E6%95%B0%E6%8D%AE/" title="【Chainlink】使用Chainlink预言机获取链下数据">【Chainlink】使用Chainlink预言机获取链下数据</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-22T08:39:47.000Z" title="发表于 2023-03-22 16:39:47">2023-03-22</time></span></div><div class="content">前言
+在上一篇博客的基础上，本文将详细介绍Chainlink获取链下数据的方法。
+本文需要在Remix上部署三个智能合约，分别是LinkToken.sol、Operator.sol和ATestnetConsumer.sol。而LinkToken合约的部署流程已在上文详细给出，这里我写一下跳转链接：【Chainlink】基于私链运行一个Chainlink预言机节点
+| Keike1 (keikei99.github.io)。
 区块链上的用户作为数据获取方，需要从链下的数据提供方获取数据，而区块链本身不具备获取现实世界数据的能力，因此需要使用Chainlink预言机作为连接链上和链下之间的桥梁。下面我们将模拟用户获取数据的这个过程。
-部署Operator.sol合约Operator.sol
+部署Operator.sol合约
+Operator.sol
 123// SPDX-License-Identifier: MITpragma solidity ^0.7.6;import &quot;@chainlink/contracts/src/v0.7/Operator.sol&quot;;
 
 部署完要记得把合约地址记录下来
-1Operator: 0xD82 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/20/%E3%80%90Rust%E3%80%91%E6%89%80%E6%9C%89%E6%9D%83Ownership/" title="【Rust】所有权Ownership"><img class="post-bg" src="/img/page/page6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Rust】所有权Ownership"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/20/%E3%80%90Rust%E3%80%91%E6%89%80%E6%9C%89%E6%9D%83Ownership/" title="【Rust】所有权Ownership">【Rust】所有权Ownership</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-20T03:55:30.000Z" title="发表于 2023-03-20 11:55:30">2023-03-20</time></span></div><div class="content">所有权核心内容：
+1Ope ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/20/%E3%80%90Rust%E3%80%91%E6%89%80%E6%9C%89%E6%9D%83Ownership/" title="【Rust】所有权Ownership"><img class="post-bg" src="/img/page/page2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Rust】所有权Ownership"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/20/%E3%80%90Rust%E3%80%91%E6%89%80%E6%9C%89%E6%9D%83Ownership/" title="【Rust】所有权Ownership">【Rust】所有权Ownership</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-20T03:55:30.000Z" title="发表于 2023-03-20 11:55:30">2023-03-20</time></span></div><div class="content">所有权
+核心内容：
 
-Rust 中的每一个值都有一个所有者（owner）。
+Rust
+中的每一个值都有一个所有者（owner）。
 值在任一时刻有且只有一个所有者。
 当所有者（变量）离开作用域，这个值将被丢弃。
 
@@ -237,20 +366,31 @@ Rust编译器会隐式调用Copy函数和Clone函数。Copy即复制一份完全
 执行结果：
 1n1 = 114514 and n2 = 114514
 上例的u32类型没有发生所有权转移，而对于String类型的数据，会发生所有权转移的情况。
-12345fn main() &#123;    let s1 = String ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/19/%E3%80%90Chainlink%E3%80%91Chainlink%E7%9B%B8%E5%85%B3/" title="【Chainlink】Chainlink相关"><img class="post-bg" src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】Chainlink相关"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/19/%E3%80%90Chainlink%E3%80%91Chainlink%E7%9B%B8%E5%85%B3/" title="【Chainlink】Chainlink相关">【Chainlink】Chainlink相关</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-19T10:54:47.000Z" title="发表于 2023-03-19 18:54:47">2023-03-19</time></span></div><div class="content">白皮书速览Chainlink白皮书地址：whitepaper-v2.pdf (chain.link)
-摘自一文速览Chainlink 2.0白皮书 - 知乎 (zhihu.com)
-Chainlink 2.0是在原版白皮书的基础上做的进一步扩展，其愿景是为智能合约快速可靠地接入任何链下数据源和链下计算资源，并同时保障隐私，补充并增强已有和新增区块链的性能。（为区块链接入链下数据，是链上和链下的桥梁）从愿景中不难发现，Chainlink服务的是现存及潜在所有区块链的智能合约，不仅为他们提供链下数据，还提供链下计算，完全满足智能合约的任意链下需求。
-为实现这一愿景，Chainlink 2.0提出去中心化预言机网络（DON）的概念，DON 是由一组Chainlink 节点负责维护的网络，节点基于委员会的共识协议，可灵活选择并部署任何预言机功能。DON的提出将原本功能性的预言机拓宽为预言机集群，实现预言机拓扑结构由点状到网状的演进。（Chainlink本身是一种特殊的分布式节点集群，一定程度上避免了传统预言机存在被单点攻击的风险）DON 的最大优势是可以快速启动新的区块链服务，无需为每个区块链 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/17/%E3%80%90Chainlink%E3%80%91%E5%9F%BA%E4%BA%8E%E7%A7%81%E9%93%BE%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AAChainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8A%82%E7%82%B9/" title="【Chainlink】基于私链运行一个Chainlink预言机节点"><img class="post-bg" src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】基于私链运行一个Chainlink预言机节点"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/17/%E3%80%90Chainlink%E3%80%91%E5%9F%BA%E4%BA%8E%E7%A7%81%E9%93%BE%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AAChainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8A%82%E7%82%B9/" title="【Chainlink】基于私链运行一个Chainlink预言机节点">【Chainlink】基于私链运行一个Chainlink预言机节点</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-17T02:53:52.000Z" title="发表于 2023-03-17 10:53:52">2023-03-17</time></span></div><div class="content">注意官方文档：Running a Chainlink Node | Chainlink Documentation
+12345fn main() &#123;     ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/19/%E3%80%90Chainlink%E3%80%91Chainlink%E7%9B%B8%E5%85%B3/" title="【Chainlink】Chainlink相关"><img class="post-bg" src="/img/page/page3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】Chainlink相关"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/19/%E3%80%90Chainlink%E3%80%91Chainlink%E7%9B%B8%E5%85%B3/" title="【Chainlink】Chainlink相关">【Chainlink】Chainlink相关</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-19T10:54:47.000Z" title="发表于 2023-03-19 18:54:47">2023-03-19</time></span></div><div class="content">白皮书速览
+Chainlink白皮书地址：whitepaper-v2.pdf
+(chain.link)
+摘自一文速览Chainlink
+2.0白皮书 - 知乎 (zhihu.com)
+Chainlink
+2.0是在原版白皮书的基础上做的进一步扩展，其愿景是为智能合约快速可靠地接入任何链下数据源和链下计算资源，并同时保障隐私，补充并增强已有和新增区块链的性能。（为区块链接入链下数据，是链上和链下的桥梁）从愿景中不难发现，Chainlink服务的是现存及潜在所有区块链的智能合约，不仅为他们提供链下数据，还提供链下计算，完全满足智能合约的任意链下需求。
+为实现这一愿景，Chainlink 2.0提出去中心化预言机网络（DON）的概念，DON
+是由一组Chainlink
+节点负责维护的网络，节点基于委员会的共识协议，可灵活选择并部署任何预言机功能。DON的提出将原本功能性的预言机拓宽为预言机集群，实现预言机拓扑结构由点状到网状的演进。（Chainlink本身是一种特殊的分布式节点集群，一定程度上避免了传统预言机存在被单点攻击的风险）DON
+的最大优势是可以快速启动新的区块链 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/17/%E3%80%90Chainlink%E3%80%91%E5%9F%BA%E4%BA%8E%E7%A7%81%E9%93%BE%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AAChainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8A%82%E7%82%B9/" title="【Chainlink】基于私链运行一个Chainlink预言机节点"><img class="post-bg" src="/img/page/page2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】基于私链运行一个Chainlink预言机节点"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/17/%E3%80%90Chainlink%E3%80%91%E5%9F%BA%E4%BA%8E%E7%A7%81%E9%93%BE%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AAChainlink%E9%A2%84%E8%A8%80%E6%9C%BA%E8%8A%82%E7%82%B9/" title="【Chainlink】基于私链运行一个Chainlink预言机节点">【Chainlink】基于私链运行一个Chainlink预言机节点</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-17T02:53:52.000Z" title="发表于 2023-03-17 10:53:52">2023-03-17</time></span></div><div class="content">注意
+官方文档：Running
+a Chainlink Node | Chainlink Documentation
 
 本教程和官方教程的区别在于，本教程基于自己搭建的Geth私有链而非Goerli测试网
-建议先在本地创建账户，再创建json文件，然后去metamask添加import account，最后再在启动私链的命令中添加—unlock参数解锁账户，实现交易的打包。这一步，目的是为在Remix上部署LinkToken合约做准备。
+建议先在本地创建账户，再创建json文件，然后去metamask添加import
+account，最后再在启动私链的命令中添加--unlock参数解锁账户，实现交易的打包。这一步，目的是为在Remix上部署LinkToken合约做准备。
 在metamask上添加创建的账户是为后续在Remix上部署合约做准备
 在Remix上部署LinkToken合约的目的是为后续给预言机节点转账做准备
 
-用Geth搭建私有链下载Geth
+用Geth搭建私有链
+下载Geth
 1234apt-get install software-properties-commonadd-apt-repository -y ppa:ethereum/ethereumapt-get updateapt-get install ethereum
 随后创建如下的文件目录
-1234/myChain├── chainlink└── localChain    ├──  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/ip.ico" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Keike1</div><div class="author-info__description">A CST student.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Keikei99"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Hey, welcome to my blog!</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理"><img src="/img/page/page5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Database】未分类的数据库原理"/></a><div class="content"><a class="title" href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理">【Database】未分类的数据库原理</a><time datetime="2023-04-18T09:30:47.000Z" title="发表于 2023-04-18 17:30:47">2023-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/" title="【Base】求职简历以及面试教程"><img src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Base】求职简历以及面试教程"/></a><div class="content"><a class="title" href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/" title="【Base】求职简历以及面试教程">【Base】求职简历以及面试教程</a><time datetime="2023-04-15T10:11:05.000Z" title="发表于 2023-04-15 18:11:05">2023-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言"><img src="/img/page/page5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Assembly】未分类的汇编语言"/></a><div class="content"><a class="title" href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言">【Assembly】未分类的汇编语言</a><time datetime="2023-04-05T14:48:15.000Z" title="发表于 2023-04-05 22:48:15">2023-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API"><img src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】Chainlink Any API"/></a><div class="content"><a class="title" href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API">【Chainlink】Chainlink Any API</a><time datetime="2023-04-01T14:19:23.000Z" title="发表于 2023-04-01 22:19:23">2023-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推"><img src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【算法】递归与递推"/></a><div class="content"><a class="title" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推">【算法】递归与递推</a><time datetime="2023-03-23T09:19:52.000Z" title="发表于 2023-03-23 17:19:52">2023-03-23</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Database/" style="font-size: 1.1em; color: #999">Database</a> <a href="/tags/Rust/" style="font-size: 1.1em; color: #999">Rust</a> <a href="/tags/Chainlink/" style="font-size: 1.5em; color: #99a9bf">Chainlink</a> <a href="/tags/Base/" style="font-size: 1.1em; color: #999">Base</a> <a href="/tags/Algorithm/" style="font-size: 1.3em; color: #99a1ac">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 1.1em; color: #999">Assembly</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">6</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-23T00:29:01.604Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/background.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Keike1</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+1234/myChain├── chainlink└── l ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/ip.ico" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Keike1</div><div class="author-info__description">A CST student.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Keikei99"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Hey, welcome to my blog!</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理"><img src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Database】未分类的数据库原理"/></a><div class="content"><a class="title" href="/2023/04/18/%E3%80%90Database%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" title="【Database】未分类的数据库原理">【Database】未分类的数据库原理</a><time datetime="2023-04-18T09:30:47.000Z" title="发表于 2023-04-18 17:30:47">2023-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/" title="【Base】求职简历以及面试教程"><img src="/img/page/page4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Base】求职简历以及面试教程"/></a><div class="content"><a class="title" href="/2023/04/15/%E3%80%90Base%E3%80%91%E6%B1%82%E8%81%8C%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8A%E9%9D%A2%E8%AF%95%E6%95%99%E7%A8%8B/" title="【Base】求职简历以及面试教程">【Base】求职简历以及面试教程</a><time datetime="2023-04-15T10:11:05.000Z" title="发表于 2023-04-15 18:11:05">2023-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言"><img src="/img/page/page1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Assembly】未分类的汇编语言"/></a><div class="content"><a class="title" href="/2023/04/05/%E3%80%90Assembly%E3%80%91%E6%9C%AA%E5%88%86%E7%B1%BB%E7%9A%84%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" title="【Assembly】未分类的汇编语言">【Assembly】未分类的汇编语言</a><time datetime="2023-04-05T14:48:15.000Z" title="发表于 2023-04-05 22:48:15">2023-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API"><img src="/img/page/page5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Chainlink】Chainlink Any API"/></a><div class="content"><a class="title" href="/2023/04/01/%E3%80%90Chainlink%E3%80%91Chainlink-Any-API/" title="【Chainlink】Chainlink Any API">【Chainlink】Chainlink Any API</a><time datetime="2023-04-01T14:19:23.000Z" title="发表于 2023-04-01 22:19:23">2023-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推"><img src="/img/page/page7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【算法】递归与递推"/></a><div class="content"><a class="title" href="/2023/03/23/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E9%80%92%E5%BD%92%E4%B8%8E%E9%80%92%E6%8E%A8/" title="【算法】递归与递推">【算法】递归与递推</a><time datetime="2023-03-23T09:19:52.000Z" title="发表于 2023-03-23 17:19:52">2023-03-23</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Base/" style="font-size: 1.1em; color: #999">Base</a> <a href="/tags/Database/" style="font-size: 1.1em; color: #999">Database</a> <a href="/tags/Algorithm/" style="font-size: 1.3em; color: #99a1ac">Algorithm</a> <a href="/tags/Chainlink/" style="font-size: 1.5em; color: #99a9bf">Chainlink</a> <a href="/tags/Rust/" style="font-size: 1.1em; color: #999">Rust</a> <a href="/tags/Assembly/" style="font-size: 1.1em; color: #999">Assembly</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">6</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-23T00:33:38.615Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/background.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Keike1</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
   init: (str) => {
     window.typed = new Typed('#subtitle', Object.assign({
       strings: str,
