@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>【Git】与Git的爱恨情长</title>
+      <link href="/2023/05/28/%E3%80%90Git%E3%80%91%E4%B8%8EGit%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E9%95%BF/"/>
+      <url>/2023/05/28/%E3%80%90Git%E3%80%91%E4%B8%8EGit%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E9%95%BF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="与Git的爱恨情长"><a href="#与Git的爱恨情长" class="headerlink" title="与Git的爱恨情长"></a>与Git的爱恨情长</h1><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在我的印象里，上传代码就是鼠标点两下就可以解决的事情。然而，当项目需要把代码上传到Git上时，我发现事情远远没有我想象当中的那么简单。Git的commit、branch、push等功能给了我当头一棒，然后我就把我的一个下午奉献给了这个<del>可爱的</del>Git。那么本文主要是总结Git的一些使用方法和使用步骤，以便未来在项目开发上不会因为不懂Git怎么用而处处撞墙。</p><h1 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h1><p>我们看到Git的第一时间容易联想到Github或者Gitee，然而他们本质上不是一个东西。Git是一个代码版本管理工具，而Github和Gitee属于代码仓库，他们两者的功能存在很大的区别。当我们的代码昨天能跑，今天加了点东西就死了的时候，那Git就能帮我们把代码的版本退回到昨天，乍一看还是非常方便的。所以我认为搞项目开发还是非常有必要学一学Git。</p><p>首先就是要学会如何在本地搭建Git的环境。实际上这个网上都有教程，我这里就不详细赘述。问题在于有了Git，我们要怎么把我们的代码上传到代码托管平台？</p><h2 id="代码上传"><a href="#代码上传" class="headerlink" title="代码上传"></a>代码上传</h2><p>在Github官网上创建一个Repository，进入到这个页面。</p><img src="/2023/05/28/%E3%80%90Git%E3%80%91%E4%B8%8EGit%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E9%95%BF/image-20230528185228515.png" class="" title="image-20230528185228515"><p>跟着它的教程做就可以了，也就是一下的步骤：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git commit -m &quot;&lt;ANY_MESSAGE&gt;&quot;</span><br><span class="line">git branch -M &lt;BRANCH&gt;</span><br><span class="line">git remote add origin https://github.com/&lt;USER_NAME&gt;/&lt;REPO&gt;.git</span><br><span class="line">git push -u origin &lt;BRANCH&gt;</span><br></pre></td></tr></table></figure><p>其中：</p><ul><li><code>git commit -m</code>用于上传代码的提交信息，即出现在这里。</li></ul><img src="/2023/05/28/%E3%80%90Git%E3%80%91%E4%B8%8EGit%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E9%95%BF/image-20230528202500160.png" class="" title="image-20230528202500160"><ul><li><code>git branch -M</code>即切换本地分支。在Git中有本地分支和远程分支的概念。远程分支是指在Github和Gitee这些代码仓库上的分支。如图所示：</li></ul><img src="/2023/05/28/%E3%80%90Git%E3%80%91%E4%B8%8EGit%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E9%95%BF/image-20230528202711771.png" class="" title="image-20230528202711771"><p>那么，我们的计算机也会保存它的分支，以保证代码同步。但是这时如果有同伴在这时往服务器里上传了代码，那么就会出现远端与本地分支不同步的情况，那么就需要使用<code>git fetch</code>来保证分支同步，随后才能保证在项目的推进过程中不掉队。</p><ul><li><code>git remote add origin</code> ：“remote可以看做是一个人的电脑，假设有十个人合作，那么就有10个remote对象。为了方便大家同步，我们创建一个叫做origin的remote，大家都和这个origin同步，那么大家就可以达成一致了。”我们把remote从远端拿到本地，就可以共同操作这台“电脑”了。</li><li><code>git push</code>：这个就是代码推送，将代码从本地local推送到远端origin。<strong>要注意的是，本地在哪个分支就只能控制远端的哪个分支，比如main只能控制origin/main，branch1只能控制origin/branch1，而不能实现跨分支的控制。</strong></li></ul><p>实际上，如果你本地已经准备好了代码，而且这个Repo仓库也是刚刚创建的，那么走到这步代码应该就能上传到平台上进行存储了。</p><h1 id="Git的进阶使用"><a href="#Git的进阶使用" class="headerlink" title="Git的进阶使用"></a>Git的进阶使用</h1><p>当一个项目逐渐做大做强时，可能就需要许多人一起去分工完成项目的编码。那么Git提供了branch分支结构，允许各个项目成员拥有自己的代码分支。而当项目的编写接近尾声时，主分支master可以将其他分支合并(merge)成一个完整的大项目。</p><p>一张图可以很好地说明Git的工作流程：</p><img src="/2023/05/28/%E3%80%90Git%E3%80%91%E4%B8%8EGit%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E9%95%BF/9c89b5dd4cfd4f90a309bab59786edec.png" class="" title="img"><p><code>git clone</code>与<code>git pull</code>的区别：</p><ul><li><p>git clone是把整个git项目拷贝下来，包括里面的日志信息，git项目里的分支，你也可以直接切换、使用里面的分支等等。意思是原本没有项目，我把项目拷贝下来。<strong>用户开发者使用较多。</strong></p></li><li><p>git pull相当于git fetch和git merge。其意思是先从远程下载git项目里的文件，然后将文件与本地的分支进行merge。意思是原本就有项目，现在把项目的最新版本拷贝下来merge。<strong>原生开发者使用较多。</strong></p></li></ul><p><code>git fork</code>与<code>git clone</code>的区别：</p><ul><li>git clone是把代码仓库中的代码拷贝到本地计算机中。这属于远端到远端的操作。</li><li>git fork是把别人的代码仓库拷贝一份放在自己的仓库中，然后再对他进行更改。这属于远端到本地的操作。</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Base </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Chainlink】Job and Task</title>
       <link href="/2023/05/11/%E3%80%90Chainlink%E3%80%91Job-and-Task/"/>
       <url>/2023/05/11/%E3%80%90Chainlink%E3%80%91Job-and-Task/</url>
