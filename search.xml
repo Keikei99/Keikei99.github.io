@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>HackTheBox</title>
+      <link href="/2023/10/04/HackTheBox/"/>
+      <url>/2023/10/04/HackTheBox/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hackthebox">HackTheBox</h1><p>ping：检查是否能与靶机通信</p><p>nmap：对靶机进行端口扫描</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自制Hexo部署器</title>
       <link href="/2023/09/06/%E8%87%AA%E5%88%B6Hexo%E9%83%A8%E7%BD%B2%E5%99%A8/"/>
       <url>/2023/09/06/%E8%87%AA%E5%88%B6Hexo%E9%83%A8%E7%BD%B2%E5%99%A8/</url>
