@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>xv6文档杂记</title>
+      <link href="/2024/01/22/xv6%E6%96%87%E6%A1%A3%E6%9D%82%E8%AE%B0/"/>
+      <url>/2024/01/22/xv6%E6%96%87%E6%A1%A3%E6%9D%82%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="0x0-操作系统接口"><a href="#0x0-操作系统接口" class="headerlink" title="0x0 操作系统接口"></a>0x0 操作系统接口</h2><p>使用<code>fork</code>系统调用后，父进程和子进程两个进程会并发地执行<code>fork()</code>语句后面的代码。当pid不为0时，该进程为父进程；当pid为0时，该进程为子进程。</p><img src="/2024/01/22/xv6%E6%96%87%E6%A1%A3%E6%9D%82%E8%AE%B0/image-20240122213737664.png" class="" title="image-20240122213737664">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>编译原理复习</title>
       <link href="/2023/11/28/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/"/>
       <url>/2023/11/28/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/</url>
